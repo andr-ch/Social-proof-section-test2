@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: "League Spartan", sans-serif;
+    display: flex;
+    flex-direction: column; /* Arrange body content in a column */
+    min-height: 100vh; /* Ensure body height covers full viewport */
+    margin: 0; /* Remove default margin */
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+/* Headings */
+.header {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+    font-size: 3.5rem;
+}
+
+.subheading {
+    color: hsl(300deg 10.43% 42.07%);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Containers */
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15px;
+    margin-top: 9%;
+    max-width: 100%;
+    flex: 1; /* Allow this section to grow and take available space */
+}
+
+/* Reviews section */
+.reviews-section {
+    padding-bottom: 4rem;
+}
+
+/* Testimonial section */
+.testimonial-statement {
+    width: 80%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.feedback-section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-bottom: 4%;
+    flex-wrap: wrap;
+}
+
+.feedback-item {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 24%;
+}
+
+.profile-pic {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-details {
+    position: relative;
+    bottom: 42px;
+    left: 64px;
+    top: -27%;
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+.buyer-status {
+    font-size: 15px;
+    color: hsl(333, 80%, 67%);
+    margin-top: -2%;
+}
+
+.comment {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: -10%;
+    margin-right: 4%;
+}
+
+.skill-card-2 {
+    position: relative;
+    top: 26px;
+    margin-right: 22%;
+}
+
+.skill-card-3 {
+    position: relative;
+    top: 62px;
+    right: 21%;
+}
+
+/* Star rating section */
+.star-rating {
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 1.5em;
+    margin-right: 8%; 
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+}
+
+.star-rating p {
+    font-size: 1em;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+.star-rating-item {
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+    padding: 2%;
+    border-radius: 10px;
+    justify-content: flex-start;
+    max-width: 69%;
+}
+
+.rating-2 {
+    position: relative;
+    left: 10%;
+}
+
+.rating-3 {
+    position: relative;
+    left: 20%;
+}
+
+/* Footer section */
+footer.attribution {
+    background-color: inherit;
+    color: ghostwhite;
+    width: 100%;
+    padding: 20px;
+    margin-top: 42px;
+    text-align: center;
+    position: relative;
+    bottom: 0; /* Position it at the bottom */
+    left: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+    /* Ensure specificity and override previous media queries */
+    
+    .header {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .container-fluid {
+        flex-direction: column !important; /* Change to column layout */
+        padding: 10px !important; /* Adjust padding for mobile view */
+        margin-top: 20% !important; /* Adjust margin for mobile view */
+    }
+
+    .star-rating {
+        margin-left: 0% !important; 
+    }
+
+    .star-rating-item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .rating-2, .rating-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .feedback-section {
+        flex-direction: column !important;
+        margin-left: 5% !important; /* Adjust margins */
+        margin-right: 5% !important;
+        padding-bottom: 2% !important; /* Adjust padding */
+    }
+
+    .feedback-item {
+        max-width: 100% !important; /* Make feedback items full-width */
+        margin-bottom: 20px !important; /* Add margin between items */
+    }
+
+    /* You can also target more specific elements within these containers */
+    .testimonial-statement {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        text-align: center !important; /* Center-align text for mobile */
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .attribution {
+        display: none;
+    }
+
+    .feedback-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .feedback-item {
+        max-width: 100%;
+    }
+
+    .star-rating-item {
+        max-width: 87%;
+    }
+}
+
+@media (min-width: 792px) and (max-width: 1263px) {
+    .testimonial-statement {
+        width: 124%;
+    }
+
+    .profile-details {
+        max-width: 38%;
+        left: 55px;
+        bottom: 31px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .container-fluid {
+        margin-left: 4%;
+    }
+    
+    .row {
+        margin-left: -14px;
+    }
+
+    .star-rating {
+        margin-left: 4%;
+        margin-top: 3%;
+    }
+
+    .star-rating-item {
+        max-width: 100%;
+    }
+
+    .feedback-item {
+        max-width: 35%;
+        margin-right: 3%;
+    }
+
+    .skill-card-3 {
+        right: 0;
+    }
+}
